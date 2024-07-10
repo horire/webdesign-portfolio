@@ -1,0 +1,582 @@
+@charset "utf-8";
+
+body {
+    font-family: "Playwrite NZ", cursive;
+    font-family: "Tsukimi Rounded", sans-serif;
+    background-color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+header {
+    position: fixed;
+    z-index: 100;
+}
+
+.herder-div-nav {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 17px;
+    z-index: 1;
+    justify-content: space-between;
+}
+
+.header-h1-toplink {
+    text-decoration: none;
+    color: white;
+    padding-left: 40px;
+    font-size: 35px;
+}
+
+/* .header-h1 {} */
+
+.header-nav {
+    padding-right: 20px;
+}
+
+.header-ul {
+    display: flex;
+
+
+}
+
+/* .header-li-aboutlink {} */
+
+/* .header-li-workslink {} */
+
+/* .header-li-likeslink {} */
+
+/* .header-li-illustrationlink {} */
+
+/* .header-li {} */
+
+.header-a {
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    color: white;
+    padding: 0 15px;
+    font-size: 28px;
+    transition: border-bottom .3s;
+}
+
+.header-a:hover {
+    border-bottom: 2px solid white;
+
+}
+
+
+.list-menu {
+    color: white;
+    text-align: center;
+    padding-top: 180px;
+    margin-bottom: 0px;
+    font-size: 50px;
+    padding-left: auto;
+    padding-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.top-page-images {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    position: fixed;
+
+    z-index: -100;
+    object-fit: cover;
+}
+.top-page-section-images {
+    object-fit: cover;
+}
+
+.top-page-section-p {
+    position: absolute;
+    font-size: 150px;
+    font-weight: bold;
+    top: 50%;
+    left: 3%;
+    /* position: fixed;
+    z-index: -99; */
+    color: white;
+}
+
+main {
+    background-color: #000000;
+    padding-top: 50px;
+
+}
+
+.list {
+    display: flex;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 200px;
+    justify-content: center;
+}
+
+.list-left {
+    padding-left: 0;
+}
+
+
+
+.list-article-1 {
+    position: relative;
+}
+
+.list-p.list-about {
+    position: absolute;
+    padding: 5px 40px;
+    padding-top: 3px;
+    top: 48%;
+    left: 31%;
+}
+
+.list-article-2 {
+    position: relative;
+}
+
+.list-p.list-works {
+    position: absolute;
+    padding: 5px 40px;
+    padding-top: 3px;
+    top: 43%;
+    left: 30%;
+}
+
+.list-article-3 {
+    position: relative;
+}
+
+.list-p.list-likes {
+    position: absolute;
+    padding: 5px 60px;
+    padding-top: 3px;
+    top: 48%;
+    left: 29%;
+}
+
+.list-article-4 {
+    position: relative;
+}
+
+.list-p.list-illustlation {
+    position: absolute;
+    padding: 5px 28px;
+    padding-top: 3px;
+    top: 48%;
+    left: 25%;
+    
+}
+
+.list-images {
+    width: 500px;
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 40px;
+    z-index: -1;
+    border-radius: 1%;
+}
+
+
+.list-p {
+    z-index: 3;
+    font-size: 40px;
+    color: white;
+    z-index: 3;
+    text-decoration: none;
+    border: 2px solid rgba(234, 230, 230, 0.905);
+    font-weight: bold;
+    background-color: #ccc7c761;
+    border-radius: 4%;
+    
+    
+
+}
+
+.list-p:hover {
+    background-color: rgba(234, 230, 230, 0.905);
+    color: #333;
+    transition: background-color .2s;
+}
+
+@media screen and (max-width: 768px) {
+
+    .header-h1-toplink {
+        font-size: 20px;
+    }
+
+    .header-a {
+        font-size: 15px;
+    }
+
+
+
+    .top-page-section-p {
+        font-size: 40px;
+    }
+
+    .list-menu {
+        font-size: 40px;
+        padding-top: 20px;
+    }
+
+    .list {
+        display: block;
+        width: 80%;
+        padding-top: 5px;
+        padding-bottom: 200px;
+        justify-content: center;
+        padding-left: auto;
+        padding-right: auto;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+    .list-images {
+        width: 100%;
+        padding-left: auto;
+        padding-right: auto;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 40px;
+        z-index: -1;
+        border-radius: 1%;
+    }
+
+    .list-ul.listright {
+        padding-left: auto;
+        padding-right: auto;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 0;
+    }
+
+    .list-p {
+        font-size: 25px;
+    }
+
+    /* .list-p.list-works {
+        position: absolute;
+        padding: 5px 40px;
+        padding-top: 3px;
+        top: 43%;
+        left: 24%;
+    }
+
+    .list-p.list-about {
+        position: absolute;
+        padding: 5px 40px;
+        padding-top: 3px;
+        top: 48%;
+        left: 25%;
+    }
+
+    .list-p.list-likes {
+        position: absolute;
+        padding: 5px 60px;
+        padding-top: 3px;
+        top: 48%;
+        left: 21%;
+        transform: translate(8%, 30%);
+
+    }
+
+    .list-p.list-illustlation {
+        position: absolute;
+        padding: 5px 28px;
+        padding-top: 3px;
+        top: 48%;
+        left: 19%;
+        transform: translate(8%, 38%);
+    } */
+
+}
+
+
+
+/* 二ページ目 */
+
+
+.top-page-images-about {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    position: fixed;
+    z-index: -100;
+}
+
+.top-page-section-p-about {
+    position: absolute;
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    top: 40%;
+    left: 65%;
+
+}
+
+.aboutpage-name {
+    padding-top: 60px;
+    display: flex;
+    /* margin-left: 117px; */
+    left: 10%;
+    width: 50%;
+    position: relative;
+}
+
+.aboutpage-midasi {
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    left: -4%;
+}
+
+.aboutpage-midasi.aboutpage-read {
+    font-size: 20px;
+}
+
+.aboutpage-figure {
+    display: flex;
+    justify-content: center;
+    gap: 190px;
+    margin-top: 137px;
+    padding-bottom: 300px;
+}
+
+.aboutpage-figcaption {
+    margin-top: 70px;
+}
+
+.aboutpage-section.about-section-top {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 70px;
+}
+
+.aboutpage-section.about-section-down {
+    display: flex;
+    gap: 150px;
+}
+
+.aboutpage-text {
+    color: white;
+    margin: 0;
+    font-size: 18px;
+}
+
+.aboutpage-text.text-two {
+    margin-top: 59px;
+}
+
+.aboutpage-img {
+    width: 380px;
+}
+
+.footer-copy {
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.onepage-footer-section {
+    padding: 30px 0;
+    text-align: center;
+    background-color: #67646478;
+    width: 100%;
+}
+
+/* illustration */
+
+
+
+.top-page-images-illustration {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    z-index: -999;
+    position: fixed;
+
+}
+
+.illustration-top-div {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    top: 25%;
+    left: 8%;
+    background-color: #5a59598a;
+    box-shadow: 10px 10px white;
+    position: absolute;
+    position: fixed;
+    z-index: -999;
+}
+
+.illustration-toptext-div {
+    padding-top: 155px;
+}
+
+.illustration-toptext {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.illustration-midasi {
+    color: white;
+    text-align: center;
+    font-size: 55px;
+    border-bottom: 2px solid white;
+    width: 60%;
+    position: absolute;
+    left: 20%;
+
+}
+
+.illustration-syoukai-ul {
+    display: flex;
+}
+
+.illustration-syoukai-img {
+    width: 50%;
+}
+
+.illustration-main {
+    z-index: 1000;
+}
+
+.illustration-syoukai-li {}
+
+.illustration-syoukai-dl {}
+
+.illustration-syoukai-dt {}
+
+.illustration-syoukai-dd {}
+
+.illustration-toptext.illustration-toptext-one {}
+
+.illustration-toptext.illustration-toptext-two {}
+
+.illustration-toptext.illustration-toptext-three {}
+
+.illustration-toptext.illustration-toptext-for {}
+
+/* アニメーション */
+
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animation-myportfolio {
+    animation-name: fadeUpAnime;
+    animation-duration: 2.5s;
+    animation-delay: 2.7s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animation-myportfolio-name {
+    animation-name: fadeUpAnime-name;
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime-name {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animation-myportfolio-nav {
+    animation-name: fadeUpAnime-nav;
+    animation-duration: 2s;
+    animation-delay: 2.7s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime-nav {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Loading背景画面設定　*/
+#splash {
+    /*fixedで全面に固定*/
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    text-align: center;
+    color: #fff;
+}
+.yohaku-two{
+    display: none;
+}
+
+@media screen and (min-width: 2556px){
+    .yohaku-two{
+       display: inline;
+    }
+    .top-page-section-p {
+        position: absolute;
+        font-size: 150px;
+        font-weight: bold;
+        top: 61%;
+        left: 3%;
+        /* position: fixed;
+        z-index: -99; */
+        color: white;
+    }
+}
